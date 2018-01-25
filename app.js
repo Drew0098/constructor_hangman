@@ -6,8 +6,7 @@ var choice;
 exports.letter; 
 exports.wordGuess;
 exports.lives = 0; 
-exports.chosenWord = array.newWord();
-
+exports.chosenWord = array.chosenWord;
 exports.requestInfo = function() {
 	if (exports.lives >= 10) {
 		console.log("You lose. Better luck next time.");

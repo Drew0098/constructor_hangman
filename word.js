@@ -1,22 +1,22 @@
 var array = require("./array.js");
 var letter = require("./letter.js");
 exports.letterArray = [];
+exports.chosenWord = array.chosenWord;
 
 exports.checker = function(){
-	var wordToCheck = array.chosenWord;
-	exports.letterArr.push(array.letter);
+	exports.letterArray.push(array.letter);
 	var detected = 0; 
-	for (var i = 0; i < wordToCheck.length; i++) {
-		if (wordToCheck.charAt(i) == array.letter){
+	for (var i = 0; i < chosenWord.length; i++) {
+		if (chosenWord.charAt(i) == array.letter){
 			letter.editArray(i, array.letter);
 			detected++;
 		}
 	}
 	letter.displayWord();
-	if (detected == 0){
+	if (detected == 0) {
 		array.lives++; 
 	}
-	main.requestInfo();
+	app.requestInfo();
 
 }; 
 

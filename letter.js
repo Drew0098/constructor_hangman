@@ -5,7 +5,7 @@ exports.wordArray = [];
 
 
 exports.initDisplay = function(){
-	var wordChoice = array.chosenWord;
+	var wordChoice = array.newWord;
 	for (var i = 0; i < wordChoice.length; i++) {
 		exports.wordArray.push(wordChoice.charAt(i));
 		if (wordChoice.charAt(i) == '\xa0') {

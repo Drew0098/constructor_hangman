@@ -2,7 +2,9 @@ var words = ["calculus", "arithmetic", "variable", "pythagorean\xa0theorem", "ra
 "linear\xa0equation", "integer", "improper\xa0fraction", "circumference", "expression", "factor\xa0tree ", "parallelogram", "trigonometry", 
 "quadrilateral", "inverse\xa0function"];
 
-var chosenWord = exports.newWord = function() {
+exports.newWord = function() {
 	var randNum = Math.floor((Math.random()*words.length)+1);
-	return words[randNum];
+	var chosenWord = words[randNum];
+
+	exports.chosenWord = chosenWord;
 }
